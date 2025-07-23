@@ -31,43 +31,43 @@ RSA鉴权加密修改密码，仓库已上传github：<https://github.com/Steven
 
 ### 步骤1：启动exe4j并输入注册码
 
-![exe4j启动界面](/assets/images/tutorials/java-exe/step1.png)
+![exe4j启动界面](/My_Blog/assets/images/tutorials/java-exe/step1.png)
 
 ### 步骤2：选择项目类型
 
-![选择JAR in EXE模式](/assets/images/tutorials/java-exe/step2.png)
+![选择JAR in EXE模式](/My_Blog/assets/images/tutorials/java-exe/step2.png)
 
 ### 步骤3：配置应用程序信息
 
-![配置应用基本信息](/assets/images/tutorials/java-exe/step3.png)
+![配置应用基本信息](/My_Blog/assets/images/tutorials/java-exe/step3.png)
 
 ### 步骤4：设置可执行文件信息
 
-![设置exe文件名和图标](/assets/images/tutorials/java-exe/step4.png)
+![设置exe文件名和图标](/My_Blog/assets/images/tutorials/java-exe/step4.png)
 
 这里需要选择64位架构：
 
-![选择64位架构](/assets/images/tutorials/java-exe/step5.png)
+![选择64位架构](/My_Blog/assets/images/tutorials/java-exe/step5.png)
 
 ### 步骤5：配置Java调用参数
 
-![配置JAR文件路径](/assets/images/tutorials/java-exe/step6.png)
+![配置JAR文件路径](/My_Blog/assets/images/tutorials/java-exe/step6.png)
 
 ### 步骤6：设置JRE要求
 
-![设置最低JRE版本要求](/assets/images/tutorials/java-exe/step7.png)
+![设置最低JRE版本要求](/My_Blog/assets/images/tutorials/java-exe/step7.png)
 
 ### 步骤7：配置启动画面
 
-![配置启动画面（可选）](/assets/images/tutorials/java-exe/step8.png)
+![配置启动画面（可选）](/My_Blog/assets/images/tutorials/java-exe/step8.png)
 
 ### 步骤8：生成可执行文件
 
-![开始编译生成exe文件](/assets/images/tutorials/java-exe/step9.png)
+![开始编译生成exe文件](/My_Blog/assets/images/tutorials/java-exe/step9.png)
 
 ### 步骤9：完成exe生成
 
-![exe生成完成](/assets/images/tutorials/java-exe/step10.png)
+![exe生成完成](/My_Blog/assets/images/tutorials/java-exe/step10.png)
 
 ## 使用Inno Setup集成JRE
 
@@ -75,35 +75,35 @@ RSA鉴权加密修改密码，仓库已上传github：<https://github.com/Steven
 
 ### 步骤10：准备JRE文件
 
-![准备JRE运行时环境](/assets/images/tutorials/java-exe/step11.png)
+![准备JRE运行时环境](/My_Blog/assets/images/tutorials/java-exe/step11.png)
 
 ### 步骤11：配置Inno Setup项目
 
 首先启动Inno Setup，创建新的安装项目：
 
-![Inno Setup项目配置界面](/assets/images/tutorials/java-exe/step12.png)
+![Inno Setup项目配置界面](/My_Blog/assets/images/tutorials/java-exe/step12.png)
 
 ### 步骤12：设置应用程序信息
 
-![设置应用程序基本信息](/assets/images/tutorials/java-exe/step13.png)
+![设置应用程序基本信息](/My_Blog/assets/images/tutorials/java-exe/step13.png)
 
 ### 步骤13：添加文件和目录
 
-![添加exe文件和JRE目录](/assets/images/tutorials/java-exe/step14.png)
+![添加exe文件和JRE目录](/My_Blog/assets/images/tutorials/java-exe/step14.png)
 
 **重要提示：** 需要将之前生成的exe文件和完整的JRE目录都添加到安装包中。
 
 ### 步骤14：配置安装选项
 
-![配置安装向导选项](/assets/images/tutorials/java-exe/step15.png)
+![配置安装向导选项](/My_Blog/assets/images/tutorials/java-exe/step15.png)
 
 ### 步骤15：编译安装程序
 
-![编译生成最终安装程序](/assets/images/tutorials/java-exe/step16.png)
+![编译生成最终安装程序](/My_Blog/assets/images/tutorials/java-exe/step16.png)
 
 ### 步骤16：完成打包
 
-![安装程序生成完成](/assets/images/tutorials/java-exe/step17.png)
+![安装程序生成完成](/My_Blog/assets/images/tutorials/java-exe/step17.png)
 
 ## 最终结果
 
@@ -111,11 +111,11 @@ RSA鉴权加密修改密码，仓库已上传github：<https://github.com/Steven
 
 ### 文件结构示例
 
-![最终文件结构](/assets/images/tutorials/java-exe/step18.png)
+![最终文件结构](/My_Blog/assets/images/tutorials/java-exe/step18.png)
 
 ### 安装程序运行效果
 
-![安装程序运行界面](/assets/images/tutorials/java-exe/step19.png)
+![安装程序运行界面](/My_Blog/assets/images/tutorials/java-exe/step19.png)
 
 ## 总结
 
