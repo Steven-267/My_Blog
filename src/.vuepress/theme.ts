@@ -8,10 +8,10 @@ const ENCRYPT_PASSWORD = ["1234"]
 // 定义主题配置
 export default hopeTheme({
   // 网站基本信息
-  hostname: "https://xlb3055.github.io",
+  hostname: "https://steven-267.github.io",
   
   author: {
-    name: "Bin",
+    name: "267",
     url: "/avator_img.jpg",
   },
 
@@ -23,7 +23,7 @@ export default hopeTheme({
   logoDark: "/avator_img.jpg",
   
   // GitHub仓库链接
-  repo: "xlb3055/newBlog",
+  repo: "Steven-267/My_Blog",
   repoLabel: "GitHub",
   
   docsDir: "src",
@@ -57,9 +57,9 @@ export default hopeTheme({
     articlePerPage: 10,
     // 社交媒体链接
     medias: {
-      GitHub: "https://github.com/xlb3055",
+      GitHub: "https://github.com/Steven-267",
       Zhihu: "https://www.zhihu.com",
-      Email: "1428982342@qq.com",
+      Email: "your-email@example.com",
     },
   },
 
