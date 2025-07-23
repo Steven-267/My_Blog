@@ -1,6 +1,7 @@
 ---
 title: MacOS实现 java程序转换成exe(程序附带rsa非对称加密鉴权修改密码github仓库)
 date: 2024-10-09
+sticky: 99
 category:
   - 技术教程
 tag:
