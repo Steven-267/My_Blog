@@ -76,6 +76,14 @@ export default sidebar({
       expanded: true,  // 默认展开
     },
     {
+      text: "技术教程",
+      icon: "fas fa-book",
+      prefix: "教程/",
+      children: "structure",
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
       text: "技术场景",
       icon: "fas fa-sitemap",
       prefix: "场景/",
