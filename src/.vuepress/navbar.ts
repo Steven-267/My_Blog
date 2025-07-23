@@ -2,12 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  {
-    // 最上面的导航栏
-    text: "面试专题",//名称
-    icon: "fas fa-folder-open",//图标
-    link: "/Java八股/",//路由
-  },
+
   {
     // 最上面的导航栏
     text: "数据结构与算法",//名称

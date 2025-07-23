@@ -12,15 +12,15 @@ export default hopeTheme({
   
   author: {
     name: "Steven267",
-    url: "/steven267-avatar.jpg",
+    url: "steven267-avatar.jpg",
   },
 
   // 使用更现代的图标集
   iconAssets: "fontawesome-with-brands",
   
   // 设置Logo
-  logo: "/steven267-avatar.jpg",
-  logoDark: "/steven267-avatar.jpg",
+  logo: "steven267-avatar.jpg",
+  logoDark: "steven267-avatar.jpg",
   
   // GitHub仓库链接
   repo: "Steven-267/My_Blog",
@@ -44,22 +44,21 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "路漫漫其修远兮，吾将上下而求索。",
+  footer: "Code with Passion, Debug with Patience. 用热情编码，用耐心调试。",
   displayFooter: true,
 
   // 博客相关
   blog: {
-    description: "一个努力学习进步的开发者",
+    description: "Innovation distinguishes between a leader and a follower.",
     intro: "/intro.html",
     // 博客头部配置
-    avatar: "/steven267-avatar.jpg",
+    avatar: "steven267-avatar.jpg",
     // 每页文章数量
     articlePerPage: 10,
     // 社交媒体链接
     medias: {
       GitHub: "https://github.com/Steven-267",
-      Zhihu: "https://www.zhihu.com",
-      Email: "your-email@example.com",
+      LeetCode: "https://leetcode.cn/u/vigilant-i3habhaoqn/",
     },
   },
 

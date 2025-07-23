@@ -3,10 +3,10 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: /steven267-avatar.jpg
-heroText: 博客之路
+heroImage: steven267-avatar.jpg
+heroText: Steven267's Tech Blog
 heroFullScreen: true
-tagline: 千里之行，始于足下。
+tagline: Think Different. Code Better.
 bgImage: /assets/images/backgrounds/3.jpg
 bgImageStyle:
   opacity: 1
@@ -19,46 +19,46 @@ projects:
 #    desc: 基于 Vue 的静态文档构建器
 #    link: https://vuejs.press/zh/
 
-  - icon: https://theme-hope-assets.vuejs.press/logo.svg
-    name: VuePress Theme Hope
-    desc: 一个功能强大的 VuePress 主题✨
-    link: https://theme-hope.vuejs.press/zh/
+  - icon: https://github.com/favicon.ico
+    name: GitHub
+    desc: 全球最大的代码托管平台
+    link: https://github.com/
 
-  - icon: https://mister-hope.com/logo.svg
-    name: Mr.Hope 主页
-    desc: VuePress Theme Hope 作者，内含学习资源
-    link: https://mister-hope.com/
+  - icon: https://leetcode.cn/favicon.ico
+    name: LeetCode
+    desc: 算法与数据结构学习平台
+    link: https://leetcode.cn/
 
-  - icon: https://v2.cn.vuejs.org/images/logo.svg
-    name: Vue2
-    desc: Vue2 官方文档
-    link: https://v2.cn.vuejs.org/v2/guide/
-
-  - icon: https://element.eleme.cn/favicon.ico
-    name: Element-ui
-    desc: Element-ui 官方文档
-    link: https://element.eleme.cn/#/zh-CN
-
-  - icon: /CSDN图标.png
-    name: CSDN
-    desc: 程序员交流平台
-    link: https://www.csdn.net/
+  - icon: https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png
+    name: Stack Overflow
+    desc: 程序员问答社区
+    link: https://stackoverflow.com/
 
   - icon: https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg
     name: 稀土掘金
-    desc: 程序员交流平台
+    desc: 中文技术社区
     link: https://juejin.cn/
 
-  - icon: https://pic.leetcode-cn.com/056dd17dd0506591d04525f015765ab749e9f9f19dcaf6e0dcae5d77057d2392-15@3x.png
-    name: 力扣
-    desc: 程序员刷题平台
-    link: https://leetcode.cn/
+  - icon: /CSDN图标.png
+    name: CSDN
+    desc: 中国最大的程序员社区
+    link: https://www.csdn.net/
 
-  - icon: https://th.bing.com/th/id/OIP.Sh3E1j7AcWHL5nkAfT0CUwHaEK?rs=1&pid=ImgDetMain
-    name: MDN
-    desc: 很不错的前端学习平台
-    link: https://developer.mozilla.org/zh-CN/docs/Learn
+  - icon: https://pdai.tech/favicon.ico
+    name: Java全栈知识体系
+    desc: pdai技术博客 - Java全栈知识体系
+    link: https://pdai.tech/
+
+  - icon: https://www.meituan.com/favicon.ico
+    name: 美团技术团队
+    desc: 美团技术团队技术分享
+    link: https://tech.meituan.com/
+
+  - icon: https://cloud.tencent.com/favicon.ico
+    name: 腾讯云开发者
+    desc: 腾讯云技术社区
+    link: https://cloud.tencent.com/developer
 
     
-footer: 不积跬步，无以至千里。
+footer: Continuous Learning, Continuous Growth. 持续学习，持续成长。
 ---
