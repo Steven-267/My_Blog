@@ -59,6 +59,5 @@ projects:
     desc: 腾讯云技术社区
     link: https://cloud.tencent.com/developer
 
-    
 footer: Continuous Learning, Continuous Growth. 持续学习，持续成长。
 ---
