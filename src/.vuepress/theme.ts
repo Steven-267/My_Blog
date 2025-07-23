@@ -34,7 +34,7 @@ export default hopeTheme({
   // 全屏按钮支持
   fullscreen: true,
   
-  // 页面信息显示
+  // 页面信息显示 - 移除贡献者信息，只保留作者、原创、日期、分类、标签、阅读时间
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   // 导航栏
@@ -84,6 +84,13 @@ export default hopeTheme({
   plugins: {
     // 博客插件
     blog: true,
+    
+    // Git插件配置 - 禁用贡献者功能
+    git: {
+      contributors: false,
+      createdTime: true,
+      updatedTime: true,
+    },
     
     // 评论功能 - 暂时禁用，需要先在GitHub上安装Giscus应用
     // comment: {
