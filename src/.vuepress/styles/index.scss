@@ -17,12 +17,4 @@
   }
 }
 
-// 预加载关键资源
-.preload-bg {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  width: 1px;
-  height: 1px;
-  background-image: url('/assets/images/backgrounds/sunrise-mountain.png');
-}
+// 移除绝对路径的背景图片引用，避免构建错误
