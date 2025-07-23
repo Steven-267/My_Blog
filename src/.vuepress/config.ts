@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/My_Blog/",
 
   lang: "zh-CN",
-  title: "267的技术博客",
+  title: "Steven267的技术博客",
   description: "记录技术学习和面试准备的博客",
 
   theme,

@@ -11,16 +11,16 @@ export default hopeTheme({
   hostname: "https://steven-267.github.io",
   
   author: {
-    name: "267",
-    url: "/avator_img.jpg",
+    name: "Steven267",
+    url: "/steven267-avatar.jpg",
   },
 
   // 使用更现代的图标集
   iconAssets: "fontawesome-with-brands",
   
   // 设置Logo
-  logo: "/avator_img.jpg",
-  logoDark: "/avator_img.jpg",
+  logo: "/steven267-avatar.jpg",
+  logoDark: "/steven267-avatar.jpg",
   
   // GitHub仓库链接
   repo: "Steven-267/My_Blog",
@@ -52,7 +52,7 @@ export default hopeTheme({
     description: "一个努力学习进步的开发者",
     intro: "/intro.html",
     // 博客头部配置
-    avatar: "/avator_img.jpg",
+    avatar: "/steven267-avatar.jpg",
     // 每页文章数量
     articlePerPage: 10,
     // 社交媒体链接

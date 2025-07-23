@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 博客主页
-heroImage: /avator_img.jpg
+heroImage: /steven267-avatar.jpg
 heroText: 博客之路
 heroFullScreen: true
 tagline: 千里之行，始于足下。
