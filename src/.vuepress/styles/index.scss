@@ -1,1 +1,28 @@
-// place your custom styles here
+// 优化首页背景图片加载体验
+.blog-home {
+  // 为背景图片添加预加载和平滑过渡
+  .bg-img-div {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+    &.loaded {
+      opacity: 1;
+    }
+  }
+  
+  // 添加背景色作为图片加载前的占位
+  .hero-info {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    transition: background 0.3s ease-in-out;
+  }
+}
+
+// 预加载关键资源
+.preload-bg {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  background-image: url('/assets/images/backgrounds/sunrise-mountain.png');
+}

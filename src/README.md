@@ -10,7 +10,8 @@ tagline: Think Different. Code Better.
 bgImage: /assets/images/backgrounds/sunrise-mountain.png
 bgImageStyle:
   opacity: 1
-  background-attachment: fixed
+  # 移除fixed附件，可能导致移动端性能问题
+  # background-attachment: fixed
   background-size: cover
   background-position: center
 projects:
