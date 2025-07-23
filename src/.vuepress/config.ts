@@ -11,8 +11,8 @@ export default defineUserConfig({
 
   // 添加头部标签，预加载关键资源
   head: [
-    // 预加载优化后的小尺寸背景图片，大幅减少加载时间
-    ['link', { rel: 'preload', href: '/My_Blog/assets/images/backgrounds/sunrise-mountain-small.jpg', as: 'image' }],
+    // 预加载高质量背景图片，平衡画质与加载速度
+    ['link', { rel: 'preload', href: '/My_Blog/assets/images/backgrounds/sunrise-mountain-hq.jpg', as: 'image' }],
     // 添加DNS预解析，加速资源加载
     ['link', { rel: 'dns-prefetch', href: '//fonts.googleapis.com' }],
     // 添加meta标签优化渲染性能

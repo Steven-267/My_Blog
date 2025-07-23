@@ -7,7 +7,7 @@ heroImage: steven267-avatar.jpg
 heroText: Steven267's Tech Blog
 heroFullScreen: true
 tagline: Think Different. Code Better.
-bgImage: /assets/images/backgrounds/sunrise-mountain-small.jpg
+bgImage: /assets/images/backgrounds/sunrise-mountain-hq.jpg
 bgImageStyle:
   opacity: 1
   background-size: cover
