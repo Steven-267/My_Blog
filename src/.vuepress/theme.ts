@@ -50,7 +50,7 @@ export default hopeTheme({
   // 博客相关
   blog: {
     description: "Innovation distinguishes between a leader and a follower.",
-    intro: "/intro.html",
+    // intro: "/intro.html",  // 已删除intro页面
     // 博客头部配置
     avatar: "steven267-avatar.jpg",
     // 每页文章数量

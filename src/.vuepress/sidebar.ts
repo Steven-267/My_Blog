@@ -71,9 +71,8 @@ export default sidebar({
       expanded: true,  // 默认展开
     },
   ],
-  // 根目录和 intro 的配置
+  // 根目录配置
   "/": [
     "",
-    "intro",
   ],
 });
