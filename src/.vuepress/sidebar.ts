@@ -63,6 +63,19 @@ export default sidebar({
   // 技术提升独立的侧边栏
   "/tech/": [
     {
+      text: "技术感悟",
+      icon: "fas fa-lightbulb",
+      children: [
+        {
+          text: "技术之外，我们该思考些什么？",
+          link: "技术之外，我们该思考些什么？",
+          icon: "fas fa-star"
+        }
+      ],
+      collapsible: true,
+      expanded: true,  // 默认展开
+    },
+    {
       text: "技术场景",
       icon: "fas fa-sitemap",
       prefix: "场景/",
