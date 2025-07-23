@@ -7,11 +7,9 @@ heroImage: steven267-avatar.jpg
 heroText: Steven267's Tech Blog
 heroFullScreen: true
 tagline: Think Different. Code Better.
-bgImage: /assets/images/backgrounds/sunrise-mountain.png
+bgImage: /assets/images/backgrounds/sunrise-mountain-small.jpg
 bgImageStyle:
   opacity: 1
-  # 移除fixed附件，可能导致移动端性能问题
-  # background-attachment: fixed
   background-size: cover
   background-position: center
 projects:

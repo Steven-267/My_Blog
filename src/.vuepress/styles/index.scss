@@ -3,7 +3,7 @@
   // 为背景图片添加预加载和平滑过渡
   .bg-img-div {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     
     &.loaded {
       opacity: 1;
@@ -14,7 +14,20 @@
   .hero-info {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     transition: background 0.3s ease-in-out;
+    
+    // 确保在图片加载前有合适的背景
+    min-height: 100vh;
+  }
+  
+  // 优化背景图片渲染性能
+  .bg-img-div img {
+    will-change: transform;
+    transform: translateZ(0);
   }
 }
 
-// 移除绝对路径的背景图片引用，避免构建错误
+// 添加全局性能优化
+* {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
