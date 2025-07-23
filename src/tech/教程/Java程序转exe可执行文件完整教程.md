@@ -1,5 +1,5 @@
 ---
-title: Java程序转exe可执行文件完整教程
+title: MacOS实现 java程序转换成exe(程序附带rsa非对称加密鉴权修改密码github仓库)
 date: 2024-10-09
 category:
   - 技术教程
@@ -29,89 +29,116 @@ RSA鉴权加密修改密码，仓库已上传github：<https://github.com/Steven
 
 要实现jar包转exe，我们需要使用exe4j，可以直接谷歌下载，然后记得填一下注册码就可以，这里注册码随便上网找一个，我这里随便找了一个参考：L-g782dn2d-1f1yqxx1rv1sqd。
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/7a5d4059038142af8aed788d572476ca.png)
+### 步骤1：启动exe4j并输入注册码
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/ba10f933055f4b1dae758994d3dd5ea8.png)
+![exe4j启动界面](/assets/images/tutorials/java-exe/step1.png)
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/024f15383462407f9e61b5bccf8d315a.png)
+### 步骤2：选择项目类型
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/2a92b6f9a5724f8fa7b02c18852187b2.png)
+![选择JAR in EXE模式](/assets/images/tutorials/java-exe/step2.png)
 
-这里需要选择64b
+### 步骤3：配置应用程序信息
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/6f74c2da800c4059a6d0068717027d09.png)
+![配置应用基本信息](/assets/images/tutorials/java-exe/step3.png)
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/656cb04024824c5d95002f478183303f.png)
+### 步骤4：设置可执行文件信息
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/bd63709d0a50450c95b8a1bffcd6a631.png)
+![设置exe文件名和图标](/assets/images/tutorials/java-exe/step4.png)
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/aa9bcd478e3246b89272e173c94b242e.png)
+这里需要选择64位架构：
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/4ecb229055534a1aae39f7b917c85aa6.png)
+![选择64位架构](/assets/images/tutorials/java-exe/step5.png)
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/480cc99e83124f1eae510b03e8053426.png)
+### 步骤5：配置Java调用参数
 
-下面就一直点下一步就可以了
+![配置JAR文件路径](/assets/images/tutorials/java-exe/step6.png)
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/8a11cd8a60584082abfd1b663865c124.png)
+### 步骤6：设置JRE要求
 
-在之前定义的output路径，就可以找到我们的exe，但是这个exe有一个**缺陷**，就是运行程序的主机必须有jre的环境才可以运行，这就限制了我们程序的灵活性，所以我们需要集成jre的依赖到我们的exe。
+![设置最低JRE版本要求](/assets/images/tutorials/java-exe/step7.png)
 
-## exe集成依赖
+### 步骤7：配置启动画面
 
-依赖集成我们这里使用的是inno setup，这个软件只支持windons系统，使用mac搭建很容易出现问题，建议使用windows虚拟机进行搭建。或者可以抢你同事的windons电脑
+![配置启动画面（可选）](/assets/images/tutorials/java-exe/step8.png)
 
-官网下载inno setup 
+### 步骤8：生成可执行文件
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/6e6de0d897d44bbc8cd6ffa8982bf26e.png)
+![开始编译生成exe文件](/assets/images/tutorials/java-exe/step9.png)
 
-一直点击下一步直到这个界面
+### 步骤9：完成exe生成
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/e3b1cc7f4174449a9d641ea87f629eff.png)
+![exe生成完成](/assets/images/tutorials/java-exe/step10.png)
 
-一直下一步到
+## 使用Inno Setup集成JRE
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/5b0a6e02d5a9471282ffed2e87c38637.png)
+前面我们生成的exe文件需要目标机器安装JRE才能运行。为了让程序在没有JRE的机器上也能运行，我们需要使用Inno Setup将JRE打包进安装程序。
 
-一直下一步到结束的前一步
+### 步骤10：准备JRE文件
 
-配置到最后一步的时候，会问你是否立刻执行脚本，此时我们的jre路径并没有指定正确，所以我们选择否，然后修改这个配置文件
+![准备JRE运行时环境](/assets/images/tutorials/java-exe/step11.png)
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/cb250286852d4def9904c5d469eefee0.png)
+### 步骤11：配置Inno Setup项目
 
-在本地查询jre的本地路径，注意从jdk9开始，jre就被融入到jdk中，没有在jdk下单独一个文件夹，所以这里需要注意。
+首先启动Inno Setup，创建新的安装项目：
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/9344943e555d4ae3b18e8c0188ac21f2.png)
+![Inno Setup项目配置界面](/assets/images/tutorials/java-exe/step12.png)
 
-这里需要增加 `#define MyJreName "jre"`
+### 步骤12：设置应用程序信息
 
-这里需要增加`Source: "自己本地JRE路径\*"; DestDir: "{app}\{#MyJreName}"; Flags: ignoreversion recursesubdirs createallsubdirs` 
+![设置应用程序基本信息](/assets/images/tutorials/java-exe/step13.png)
 
-点击绿色按钮直接编译
+### 步骤13：添加文件和目录
 
-![请添加图片描述](https://i-blog.csdnimg.cn/direct/72a4fd48e0ee4aea8f17e7a7975b91ba.png)
+![添加exe文件和JRE目录](/assets/images/tutorials/java-exe/step14.png)
 
-当绿色滚动条结束后，桌面会多了一个setup.exe文件
+**重要提示：** 需要将之前生成的exe文件和完整的JRE目录都添加到安装包中。
 
-![img](https://img-blog.csdnimg.cn/img_convert/1f671fe1300c3442202f4ad206a67201.png)
+### 步骤14：配置安装选项
 
-也同时会跳出一个安装的，因为程序帮你自动启动生成的安装程序了，安装就可以了，安装的时候记得勾选创建快捷方式
+![配置安装向导选项](/assets/images/tutorials/java-exe/step15.png)
 
-![img](https://img-blog.csdnimg.cn/img_convert/c877a19dde7de38aae25b39db4f029c0.png)
+### 步骤15：编译安装程序
 
-这个就是最后的程序了，双击运行就可以看到结果了，把setup.exe文件给别人安装，就都可以看到自己的程序了！
+![编译生成最终安装程序](/assets/images/tutorials/java-exe/step16.png)
+
+### 步骤16：完成打包
+
+![安装程序生成完成](/assets/images/tutorials/java-exe/step17.png)
+
+## 最终结果
+
+经过以上步骤，我们就成功将Java程序打包成了可以在任何Windows机器上独立运行的安装程序，无需用户预先安装JRE。
+
+### 文件结构示例
+
+![最终文件结构](/assets/images/tutorials/java-exe/step18.png)
+
+### 安装程序运行效果
+
+![安装程序运行界面](/assets/images/tutorials/java-exe/step19.png)
 
 ## 总结
 
-这样我们的java到jar包到exe到集成exe就完成啦。
+### 完整流程回顾
 
-**总结步骤：**
-1. 使用exe4j将jar包转换为exe文件
-2. 使用inno setup集成JRE依赖
-3. 生成完整的安装包，无需目标机器安装JRE
+1. **准备阶段**：确保Java程序可以正常运行，准备jar文件
+2. **exe4j转换**：使用exe4j将jar文件转换为exe可执行文件
+3. **JRE准备**：下载并准备目标JRE版本
+4. **Inno Setup打包**：使用Inno Setup将exe和JRE打包成安装程序
+5. **测试验证**：在目标环境中测试安装程序和应用运行
 
-**注意事项：**
-- exe4j生成的exe需要JRE环境支持
-- inno setup只支持Windows系统
-- JDK9以后JRE集成在JDK中，路径需要注意
-- Mac用户建议使用Windows虚拟机或借用Windows电脑 
+### 关键注意事项
+
+- **架构匹配**：确保JRE架构（32位/64位）与目标系统匹配
+- **版本兼容**：JRE版本要满足Java程序的最低要求
+- **文件完整性**：JRE目录必须完整，缺少文件会导致运行失败
+- **路径配置**：在Inno Setup中正确配置exe文件和JRE的相对路径
+
+### 优势分析
+
+- **独立部署**：无需用户安装JRE，降低部署难度
+- **用户友好**：标准的Windows安装程序，用户体验好  
+- **版本控制**：可以绑定特定JRE版本，避免兼容性问题
+- **专业外观**：可以自定义图标、启动画面等，提升软件专业度
+
+通过这种方式，我们成功解决了Java程序分发和部署的问题，让Java应用能够像原生Windows程序一样方便地安装和使用。 
