@@ -1,0 +1,51 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#F5F7FB"/>
+  <rect x="40" y="32" width="1120" height="696" rx="28" fill="white" stroke="#D8E0F0" stroke-width="2"/>
+  <text x="80" y="92" fill="#122033" font-size="34" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">流式输出的三层理解框架</text>
+  <text x="80" y="128" fill="#5A6B85" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">先看传输方式，再看输出粒度，最后看缓冲和 flush 行为。</text>
+
+  <rect x="80" y="170" width="1040" height="150" rx="24" fill="#EEF4FF" stroke="#B7CCF8" stroke-width="2"/>
+  <rect x="110" y="200" width="180" height="90" rx="18" fill="#2458E6"/>
+  <text x="142" y="238" fill="white" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">第一层</text>
+  <text x="132" y="268" fill="white" font-size="22" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">传输方式</text>
+  <rect x="330" y="198" width="160" height="42" rx="21" fill="white" stroke="#9AB4F3" stroke-width="2"/>
+  <rect x="510" y="198" width="120" height="42" rx="21" fill="white" stroke="#9AB4F3" stroke-width="2"/>
+  <rect x="650" y="198" width="160" height="42" rx="21" fill="white" stroke="#9AB4F3" stroke-width="2"/>
+  <rect x="830" y="198" width="210" height="42" rx="21" fill="white" stroke="#9AB4F3" stroke-width="2"/>
+  <text x="350" y="225" fill="#183153" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">HTTP Chunked</text>
+  <text x="552" y="225" fill="#183153" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">SSE</text>
+  <text x="858" y="225" fill="#183153" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">gRPC Streaming</text>
+  <text x="675" y="225" fill="#183153" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">WebSocket</text>
+  <text x="330" y="280" fill="#4E607A" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">决定“数据怎么在两端之间流动”</text>
+
+  <path d="M600 320L600 372" stroke="#9CB4DE" stroke-width="4" stroke-linecap="round"/>
+  <path d="M588 360L600 376L612 360" stroke="#9CB4DE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="80" y="390" width="1040" height="150" rx="24" fill="#F3FBF6" stroke="#B7E2C2" stroke-width="2"/>
+  <rect x="110" y="420" width="180" height="90" rx="18" fill="#1F8F58"/>
+  <text x="142" y="458" fill="white" font-size="24" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">第二层</text>
+  <text x="132" y="488" fill="white" font-size="22" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">输出粒度</text>
+  <rect x="330" y="418" width="120" height="42" rx="21" fill="white" stroke="#8ED3A4" stroke-width="2"/>
+  <rect x="470" y="418" width="120" height="42" rx="21" fill="white" stroke="#8ED3A4" stroke-width="2"/>
+  <rect x="610" y="418" width="100" height="42" rx="21" fill="white" stroke="#8ED3A4" stroke-width="2"/>
+  <rect x="730" y="418" width="120" height="42" rx="21" fill="white" stroke="#8ED3A4" stroke-width="2"/>
+  <text x="362" y="445" fill="#143B28" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">Token</text>
+  <text x="503" y="445" fill="#143B28" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">Chunk</text>
+  <text x="647" y="445" fill="#143B28" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">行</text>
+  <text x="762" y="445" fill="#143B28" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">消息</text>
+  <text x="330" y="500" fill="#4F6C5D" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">决定“每次往外发多少、体验像打字还是像事件流”</text>
+
+  <path d="M600 540L600 592" stroke="#C8B3EF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M588 580L600 596L612 580" stroke="#C8B3EF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="80" y="610" width="1040" height="88" rx="24" fill="#FBF5FF" stroke="#D9C2F3" stroke-width="2"/>
+  <rect x="110" y="627" width="250" height="54" rx="18" fill="#7C41D9"/>
+  <text x="138" y="662" fill="white" font-size="22" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">第三层：缓冲策略</text>
+  <rect x="390" y="633" width="140" height="42" rx="21" fill="white" stroke="#C8A8F3" stroke-width="2"/>
+  <rect x="550" y="633" width="140" height="42" rx="21" fill="white" stroke="#C8A8F3" stroke-width="2"/>
+  <rect x="710" y="633" width="180" height="42" rx="21" fill="white" stroke="#C8A8F3" stroke-width="2"/>
+  <text x="415" y="660" fill="#3A2259" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">无缓冲</text>
+  <text x="575" y="660" fill="#3A2259" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">行缓冲</text>
+  <text x="736" y="660" fill="#3A2259" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">全缓冲 / 块缓冲</text>
+  <text x="915" y="661" fill="#5E4A7B" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">决定“数据什么时候真的被发出去”</text>
+</svg>

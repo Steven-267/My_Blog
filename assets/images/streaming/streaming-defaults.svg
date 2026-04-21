@@ -1,0 +1,34 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#F6F8FC"/>
+  <rect x="40" y="32" width="1120" height="696" rx="28" fill="white" stroke="#D9E2F2" stroke-width="2"/>
+  <text x="80" y="92" fill="#122033" font-size="34" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">常见场景里的默认选型</text>
+  <text x="80" y="128" fill="#5A6B85" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">先有默认答案，再根据真实约束去微调。</text>
+
+  <rect x="80" y="180" width="490" height="220" rx="26" fill="#EEF4FF" stroke="#BCD0F8" stroke-width="2"/>
+  <circle cx="130" cy="235" r="22" fill="#2458E6"/>
+  <text x="122" y="243" fill="white" font-size="22" font-family="Arial, sans-serif" font-weight="700">1</text>
+  <text x="170" y="235" fill="#183153" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">网页里展示大模型输出</text>
+  <text x="170" y="276" fill="#4E607A" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">推荐：SSE + Token / Chunk 级输出</text>
+  <text x="170" y="318" fill="#4E607A" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">前端接入简单，浏览器友好，最适合打字机效果。</text>
+
+  <rect x="630" y="180" width="490" height="220" rx="26" fill="#F3FBF6" stroke="#BDE3C5" stroke-width="2"/>
+  <circle cx="680" cy="235" r="22" fill="#1F8F58"/>
+  <text x="672" y="243" fill="white" font-size="22" font-family="Arial, sans-serif" font-weight="700">2</text>
+  <text x="720" y="235" fill="#143B28" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">双向实时交互</text>
+  <text x="720" y="276" fill="#4F6C5D" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">推荐：WebSocket</text>
+  <text x="720" y="318" fill="#4F6C5D" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">适合聊天、协同编辑、语音流和控制信号同步。</text>
+
+  <rect x="80" y="440" width="490" height="220" rx="26" fill="#FFF8EE" stroke="#F3D4A3" stroke-width="2"/>
+  <circle cx="130" cy="495" r="22" fill="#D9822B"/>
+  <text x="122" y="503" fill="white" font-size="22" font-family="Arial, sans-serif" font-weight="700">3</text>
+  <text x="170" y="495" fill="#5A3717" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">微服务内部高性能流</text>
+  <text x="170" y="536" fill="#7A5A38" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">推荐：gRPC Streaming</text>
+  <text x="170" y="578" fill="#7A5A38" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">更适合低延迟、高频推送和服务之间的双向流处理。</text>
+
+  <rect x="630" y="440" width="490" height="220" rx="26" fill="#FBF5FF" stroke="#D8C2F1" stroke-width="2"/>
+  <circle cx="680" cy="495" r="22" fill="#7C41D9"/>
+  <text x="672" y="503" fill="white" font-size="22" font-family="Arial, sans-serif" font-weight="700">4</text>
+  <text x="720" y="495" fill="#3A2259" font-size="28" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-weight="700">日志和命令行输出</text>
+  <text x="720" y="536" fill="#5E4A7B" font-size="20" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">重点：缓冲模式 + flush</text>
+  <text x="720" y="578" fill="#5E4A7B" font-size="18" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif">很多“看起来不流”的问题，其实不在协议，而在缓冲。</text>
+</svg>
